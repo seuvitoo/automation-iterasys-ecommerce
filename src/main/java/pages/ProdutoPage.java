@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class ProdutoPage {
 
     private By nomeProduto = By.className("h1");
-    private By precoProduto = By.className("current-price");
+    private By precoProduto = By.cssSelector(".current-price > span");
 
     private WebDriver driver;
 
