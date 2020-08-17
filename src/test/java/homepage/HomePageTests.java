@@ -31,10 +31,10 @@ public class HomePageTests extends BaseTests {
         ProdutoPage produtoPage = homePage.clicarProduto(indice);
 
         String nomeProduto_produtoPage = produtoPage.obterNomeProduto();
-        String precoProuto_produtoPage = produtoPage.obterPrecoProduto();
+        String precoProduto_produtoPage = produtoPage.obterPrecoProduto();
 
         assertThat(nomeProduto_home.toUpperCase(), is(nomeProduto_produtoPage.toUpperCase()));
-        assertThat(precoProduto_home, is(precoProuto_produtoPage));
+        assertThat(precoProduto_home, is(precoProduto_produtoPage));
     }
 
     @Test
